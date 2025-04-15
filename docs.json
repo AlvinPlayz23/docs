@@ -78,12 +78,12 @@
         },
         {
           "anchor": "Features",
-          "href": "/about",
+          "href": "https://github.com/bolt-new/project-x/about",
           "icon": "bolt"
         },
         {
           "anchor": "Project Management",
-          "href": "/project-management",
+          "href": "https://github.com/bolt-new/project-x/project-management",
           "icon": "kanban"
         }
       ]
