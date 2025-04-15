@@ -1,0 +1,89 @@
+---
+title: 'Publish to GitHub'
+description: 'Learn how to publish your PROJECT-X applications to GitHub'
+---
+
+# Publishing to GitHub
+
+PROJECT-X allows you to publish your projects directly to GitHub, making it easy to share your code, collaborate with others, or set up continuous integration and deployment pipelines.
+
+## Prerequisites
+
+Before publishing to GitHub, ensure you have:
+
+1. A completed PROJECT-X application that's ready for sharing
+2. A GitHub account (you can sign up for free at [github.com](https://github.com))
+3. Properly structured project with appropriate documentation
+
+## Publication Steps
+
+<Steps>
+  <Step title="Prepare Your Project">
+    Make sure your project is working correctly in the PROJECT-X preview. Add a README.md file with project information if you haven't already.
+  </Step>
+  <Step title="Initiate GitHub Publication">
+    In the PROJECT-X interface, look for the "Publish" or "Export" button and select "Publish to GitHub" from the options.
+  </Step>
+  <Step title="Authenticate with GitHub">
+    You'll be prompted to log in to your GitHub account or authorize PROJECT-X to create repositories on your behalf.
+  </Step>
+  <Step title="Configure Repository Settings">
+    Enter repository details such as:
+    - Repository name
+    - Description
+    - Visibility (public or private)
+    - License type
+  </Step>
+  <Step title="Review Files">
+    Review the files that will be published to GitHub. You can exclude certain files if needed.
+  </Step>
+  <Step title="Publish">
+    Click the final publish button to create your GitHub repository and push your code.
+  </Step>
+</Steps>
+
+## After Publication
+
+Once your project is published to GitHub:
+
+1. **Access Your Repository** - You'll receive a link to your new GitHub repository
+2. **Clone Locally** - You can clone the repository to continue development locally
+3. **Set Up CI/CD** - Configure GitHub Actions or other CI/CD tools for automated testing and deployment
+4. **Collaborate** - Invite collaborators to work on your project
+
+<Note>
+  Consider adding GitHub-specific files like CONTRIBUTING.md, CODE_OF_CONDUCT.md, and ISSUE_TEMPLATE.md to make your project more community-friendly.
+</Note>
+
+## Best Practices
+
+When publishing PROJECT-X applications to GitHub:
+
+<CardGroup cols={2}>
+  <Card title="Comprehensive README" icon="book">
+    Create a detailed README.md with installation instructions, usage examples, and project information
+  </Card>
+  <Card title=".gitignore" icon="eye-slash">
+    Include a proper .gitignore file to exclude node_modules, build artifacts, and environment files
+  </Card>
+  <Card title="License" icon="scale-balanced">
+    Choose an appropriate license for your project to clarify how others can use your code
+  </Card>
+  <Card title="Documentation" icon="file-lines">
+    Include additional documentation beyond the README for complex projects
+  </Card>
+</CardGroup>
+
+## Example Workflow
+
+Here's a typical workflow for publishing a PROJECT-X application to GitHub:
+
+1. Create your application using PROJECT-X
+2. Test the application thoroughly in the preview
+3. Add a comprehensive README.md file
+4. Click the "Publish" button and select "Publish to GitHub"
+5. Authenticate with your GitHub account
+6. Configure your repository settings (name, description, visibility)
+7. Review the files to be published
+8. Click "Publish" to create your GitHub repository
+9. Once complete, you'll receive a link to your new repository

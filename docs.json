@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "PROJECT-X Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0284c7",
+    "light": "#38bdf8",
+    "dark": "#0369a1"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -22,34 +22,48 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Features",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "about"
+            ]
+          },
+          {
+            "group": "LLM Integrations",
+            "pages": [
+              "openai",
+              "anthropic",
+              "ollama",
+              "openrouter",
+              "gemini",
+              "lmstudio",
+              "mistral",
+              "xai",
+              "huggingface",
+              "deepseek",
+              "groq",
+              "cohere",
+              "perplexity",
+              "aws-bedrock",
+              "together"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Development",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Project Management",
             "pages": [
-              "api-reference/introduction"
+              "project-management"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Deployment",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "deployment/github",
+              "deployment/netlify",
+              "deployment/docker"
             ]
           }
         ]
@@ -58,19 +72,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "GitHub",
+          "href": "https://github.com/bolt-new/project-x",
+          "icon": "github"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Features",
+          "href": "/about",
+          "icon": "bolt"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Project Management",
+          "href": "/project-management",
+          "icon": "kanban"
         }
       ]
     }
@@ -82,21 +96,19 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "GitHub",
+        "href": "https://github.com/bolt-new/project-x"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Try PROJECT-X",
+      "href": "https://github.com/bolt-new/project-x"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/bolt-new/project-x"
     }
   }
 }

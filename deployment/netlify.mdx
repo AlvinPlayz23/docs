@@ -1,0 +1,89 @@
+---
+title: 'Deploy to Netlify'
+description: 'Learn how to deploy your PROJECT-X applications to Netlify'
+---
+
+# Deploying to Netlify
+
+PROJECT-X allows you to deploy your applications directly to Netlify with just a few clicks. This feature makes it easy to share your projects with others or launch them for production use.
+
+## Prerequisites
+
+Before deploying to Netlify, ensure you have:
+
+1. A completed PROJECT-X application that's ready for deployment
+2. A Netlify account (you can sign up for free at [netlify.com](https://netlify.com))
+3. Properly configured build settings in your project
+
+## Deployment Steps
+
+<Steps>
+  <Step title="Prepare Your Project">
+    Make sure your project is working correctly in the PROJECT-X preview. Test all functionality before deployment.
+  </Step>
+  <Step title="Configure Build Settings">
+    Ensure your project has the necessary build configuration. For most web applications, this includes:
+    
+    ```json
+    // package.json example
+    {
+      "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+      }
+    }
+    ```
+  </Step>
+  <Step title="Initiate Deployment">
+    In the PROJECT-X interface, look for the "Deploy" button and select "Deploy to Netlify" from the options.
+  </Step>
+  <Step title="Authenticate with Netlify">
+    You'll be prompted to log in to your Netlify account or authorize PROJECT-X to deploy on your behalf.
+  </Step>
+  <Step title="Configure Deployment Settings">
+    Review and adjust the deployment settings if needed. PROJECT-X will automatically detect the correct build command and publish directory for most projects.
+  </Step>
+  <Step title="Deploy">
+    Click the final deploy button to start the deployment process. PROJECT-X will package your application and send it to Netlify.
+  </Step>
+</Steps>
+
+## After Deployment
+
+Once your application is deployed:
+
+1. **Access Your Site** - Netlify will provide a unique URL where your site is hosted
+2. **Custom Domain** - You can configure a custom domain in your Netlify dashboard
+3. **Continuous Deployment** - Set up continuous deployment from GitHub if you've published your project there
+
+<Note>
+  Netlify offers many advanced features like form handling, serverless functions, and more. Visit the [Netlify documentation](https://docs.netlify.com/) to learn about these capabilities.
+</Note>
+
+## Troubleshooting
+
+If you encounter issues during deployment:
+
+<AccordionGroup>
+  <Accordion title="Build Failures">
+    Check your build command and dependencies. Make sure all required packages are installed and your build script is correct.
+  </Accordion>
+  <Accordion title="Missing Assets">
+    Ensure your assets are properly referenced and included in your build output directory.
+  </Accordion>
+  <Accordion title="Environment Variables">
+    If your application requires environment variables, make sure to configure them in your Netlify site settings.
+  </Accordion>
+</AccordionGroup>
+
+## Example: Deploying a React Application
+
+Here's a typical workflow for deploying a React application created with PROJECT-X to Netlify:
+
+1. Create your React application using PROJECT-X
+2. Test the application thoroughly in the preview
+3. Click the "Deploy" button and select "Deploy to Netlify"
+4. Authenticate with your Netlify account
+5. PROJECT-X will automatically set the build command to `npm run build` and the publish directory to `dist`
+6. Click "Deploy" to finalize the process
+7. Once complete, you'll receive a URL where your application is hosted
